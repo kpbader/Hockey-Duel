@@ -1,19 +1,18 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Button, Text, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.container.splashText}>Hockey Duel</Text>
       <StatusBar style="auto" />
-      <Button style={styles.button}
-        // onPress={onPressLearnMore}
-        title="Enter"
-        color="#fff"
-        height="80%"
-        accessibilityLabel="Learn more about this purple button"
-      />
+      <View>
+        <TouchableOpacity
+          style={styles.button}>
+          <Text>Enter</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 }
@@ -29,17 +28,18 @@ const styles = StyleSheet.create({
       fontSize: 35,
       color: 'white',
       padding: 20,
-      marginTop: 50
-     }
-  
+      marginTop: 20
+    }
+
   },
   button: {
     alignItems: 'center',
     justifyContent: 'center',
-    paddingVertical: 12,
-    paddingHorizontal: 32,
-    borderRadius: 4,
-    elevation: 3,
-    backgroundColor: 'black',
+    paddingVertical: 10,
+    paddingHorizontal: 30,
+    borderRadius: 6,
+    marginTop: 50,
+    backgroundColor: 'white',
+    color: 'white',
   },
 });
