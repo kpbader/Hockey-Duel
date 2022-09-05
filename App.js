@@ -1,18 +1,14 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import Nav from "./src/components/Nav";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.container.splashText}>Hockey Duel</Text>
       <StatusBar style="auto" />
-      <View>
-        <TouchableOpacity
-          style={styles.button}>
-          <Text>Enter</Text>
-        </TouchableOpacity>
-      </View>
+      <Nav />
     </View>
   );
 }
@@ -20,26 +16,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000',
-    alignItems: 'center',
-    justifyContent: 'center',
-    splashText: {
-      fontFamily: "Copperplate",
-      fontSize: 35,
-      color: 'white',
-      padding: 20,
-      marginTop: 20
-    }
-
-  },
-  button: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingVertical: 10,
-    paddingHorizontal: 30,
-    borderRadius: 6,
-    marginTop: 50,
     backgroundColor: 'white',
-    color: 'white',
-  },
+    fontFamily: 'Copperplate',
+    color: 'black'
+  }
 });
