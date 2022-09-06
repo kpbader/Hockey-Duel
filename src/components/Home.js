@@ -5,7 +5,7 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 function Home() {
     return (
       <View style={styles.homeContainer}>
-        <Text>Home Screen</Text>
+        <Text>Welcome to Hockey Duel!</Text>
       </View>
     );
   }
@@ -14,7 +14,8 @@ function Home() {
     homeContainer: {
         flex: 1, 
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center', 
+        margin: 20
     }
   })
 

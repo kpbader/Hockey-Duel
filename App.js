@@ -8,8 +8,8 @@ import Header from "./src/components/Header";
 import Home from "./src/components/Home";
 import Teams from "./src/components/Teams";
 import Players from "./src/components/Players";
-
-
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+// import { mdiHockeySticks } from '@mdi/js';
 
 function SettingsScreen() {
   return (
@@ -24,13 +24,23 @@ const Tab = createBottomTabNavigator();
 function MyTabs() {
   return (
     <Tab.Navigator>
-      <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Teams" component={Teams} />
-      <Tab.Screen name="Players" component={Players} />
-      <Tab.Screen name="Settings" component={SettingsScreen} />
+      <Tab.Screen name="Home" options={{ tabBarIcon: () => (
+             <MaterialCommunityIcons name="hockey-puck" size="30" />
+          ) }} component={Home} />
+      <Tab.Screen name="Teams" options={{ tabBarIcon: () => (
+             <MaterialCommunityIcons name="hockey-sticks" size="30" />
+          ) }} component={Teams} />
+      <Tab.Screen name="Players" options={{ tabBarIcon: () => (
+             <MaterialCommunityIcons name="account-box-multiple" size="30" />
+          ) }} component={Players} />
+      <Tab.Screen name="Settings" options={{ tabBarIcon: () => (
+             <MaterialCommunityIcons name="cog" size="30" />
+          ) }} component={SettingsScreen} />
     </Tab.Navigator>
   );
 }
+
+
 
 export default function App() {
   return (

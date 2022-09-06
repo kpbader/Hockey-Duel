@@ -8,8 +8,9 @@ const Teams = () => {
         <>
         <ModalDropdown 
             style={{ marginTop: 25}}
+            textStyle={{fontSize: 25, fontFamily: 'Copperplate', padding: 20}}
             dropdownStyle={{width:300}}
-            dropdownTextStyle={{fontSize: 25, fontFamily: 'Copperplate'}}
+            dropdownTextStyle={{fontSize: 20, fontFamily: 'Copperplate'}}
             options={[
                 'Anaheim Ducks',
                 'Arizona Coyotes',
@@ -44,13 +45,14 @@ const Teams = () => {
                 'Washington Capitals',
                 'Winnipeg Jets'
                 ]}>
-                    <Text style={{ fontSize: 30, fontFamily: 'Copperplate' }}>Select first team</Text>
+                    
         </ModalDropdown>
 
         <ModalDropdown 
             style={{ marginTop: 50}}
+            textStyle={{fontSize: 25, fontFamily: 'Copperplate', padding: 20}}
             dropdownStyle={{width:300}}
-            dropdownTextStyle={{fontSize: 25, fontFamily: 'Copperplate'}}
+            dropdownTextStyle={{fontSize: 20, fontFamily: 'Copperplate'}}
             options={[
                 'Anaheim Ducks',
                 'Arizona Coyotes',
@@ -85,7 +87,7 @@ const Teams = () => {
                 'Washington Capitals',
                 'Winnipeg Jets'
                 ]}>
-                    <Text style={{ fontSize: 30, fontFamily: 'Copperplate' }}>Select second team</Text>
+                    
         </ModalDropdown>       
         </>
         
