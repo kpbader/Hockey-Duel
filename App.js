@@ -1,8 +1,7 @@
 import React from 'react';
-import { StatusBar } from 'expo-status-bar';
+// import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-// import Nav from "./src/components/Nav";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Header from "./src/components/Header";
 import Home from "./src/components/Home";

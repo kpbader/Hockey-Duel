@@ -5,9 +5,7 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
 const Players = () => {
     return (
-        <ModalDropdown options={['option 1', 'option 2']}>
-            
-        </ModalDropdown>
+        <Text style={{ fontFamily: 'Copperplate', fontSize: 25, margin: 20 }}>Coming Soon!</Text>
     )
 }
 
