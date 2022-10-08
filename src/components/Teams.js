@@ -18,73 +18,73 @@ const Teams = () => {
 
         switch (chosenTeamOne ) {
             case 'Anaheim Ducks':
-                teamIdOne = 18;
+                teamIdOne = 24;
                 break;
             case 'Arizona Coyotes':
                 teamIdOne = 53;
                 break;
             case 'Boston Bruins':
-                // teamIdOne = ;
+                teamIdOne = 6;
                 break;
             case 'Buffalo Sabres':
-                // teamIdOne = ;
+                teamIdOne = 7;
                 break;
             case 'Calgary Flames':
-                // teamIdOne = ;
+                teamIdOne = 20;
                 break;
             case 'Carolina Hurricanes':
-                // teamIdOne = ;
+                teamIdOne = 12;
                 break;
             case 'Chicago Blackhawks':
-                // teamIdOne = ;
+                teamIdOne = 16;
                 break;
             case 'Colorado Avalanche':
-                // teamIdOne = ;
+                teamIdOne = 21;
                 break;
             case 'Columbus Blue Jackets':
-                // teamIdOne = ;
+                teamIdOne = 29;
                 break;
             case 'Dallas Stars':
-                // teamIdOne = ;
+                teamIdOne = 25;
                 break;
             case 'Detroit Red Wings':
-                // teamIdOne = ;
+                teamIdOne = 17;
                 break;
             case 'Edmonton Oilers':
-                // teamIdOne = ;
+                teamIdOne = 22;
                 break;
             case 'Florida Panthers':
-                // teamIdOne = ;
+                teamIdOne = 13;
                 break;
             case 'Los Angeles Kings':
-                // teamIdOne = ;
+                teamIdOne = 26;
                 break;
             case 'Minnesota Wild':
-                // teamIdOne = ;
+                teamIdOne = 30;
                 break;
             case 'Montreal Canadiens':
-                // teamIdOne = ;
+                teamIdOne = 8;
                 break;
             case 'Nashville Predators':
-                // teamIdOne = ;
+                teamIdOne = 18;
                 break;
             case 'New Jersey Devils':
-                // teamIdOne = ;
+                teamIdOne = 1;
                 break;
             case 'New York Islanders':
-                // teamIdOne = ;
+                teamIdOne = 2;
                 break;
             case 'New York Rangers':
-                // teamIdOne = ;
+                teamIdOne = 3;
                 break;
             case 'Ottawa Senators':
-                // teamIdOne = ;
+                teamIdOne = 9;
                 break;
             case 'Philadelphia Flyers':
-                // teamIdOne = ;
+                teamIdOne = 4;
                 break;
             case 'Pittsburgh Penguins':
-                // teamIdOne = ;
+                teamIdOne = 5;
                 break;
             case 'San Jose Sharks':
                 teamIdOne = 28;
@@ -93,25 +93,25 @@ const Teams = () => {
                 // teamIdOne = ;
                 break;
             case 'St. Louis Blues':
-                // teamIdOne = ;
+                teamIdOne = 19;
                 break;
             case 'Tampa Bay Lightning':
-                // teamIdOne = ;
+                teamIdOne = 14;
                 break;
             case 'Toronto Maple Leafs':
-                // teamIdOne = ;
+                teamIdOne = 10;
                 break;
             case 'Vancouver Canucks':
-                // teamIdOne = ;
+                teamIdOne = 23;
                 break;
             case 'Vegas Golden Knights':
-                // teamIdOne = ;
+                teamIdOne = 54;
                 break;
             case 'Washington Capitals':
-                // teamIdOne = ;
+                teamIdOne = 15;
                 break;
             case 'Winnipeg Jets':
-                // teamIdOne = ;
+                teamIdOne = 52;
                 break;
         }
 
@@ -137,73 +137,73 @@ const Teams = () => {
 
         switch (chosenTeamTwo ) {
             case 'Anaheim Ducks':
-                teamIdTwo = 18;
+                teamIdTwo = 24;
                 break;
             case 'Arizona Coyotes':
                 teamIdTwo = 53;
                 break;
             case 'Boston Bruins':
-                // teamIdTwo = ;
+                teamIdTwo = 6;
                 break;
             case 'Buffalo Sabres':
-                // teamIdTwo = ;
+                teamIdTwo = 7;
                 break;
             case 'Calgary Flames':
-                // teamIdTwo = ;
+                teamIdTwo = 20;
                 break;
             case 'Carolina Hurricanes':
-                // teamIdTwo = ;
+                teamIdTwo = 12;
                 break;
             case 'Chicago Blackhawks':
-                // teamIdTwo = ;
+                teamIdTwo = 16;
                 break;
             case 'Colorado Avalanche':
-                // teamIdTwo = ;
+                teamIdTwo = 21;
                 break;
             case 'Columbus Blue Jackets':
-                // teamIdTwo = ;
+                teamIdTwo = 29;
                 break;
             case 'Dallas Stars':
-                // teamIdTwo = ;
+                teamIdTwo = 25;
                 break;
             case 'Detroit Red Wings':
-                // teamIdTwo = ;
+                teamIdTwo = 17;
                 break;
             case 'Edmonton Oilers':
-                // teamIdTwo = ;
+                teamIdTwo = 22;
                 break;
             case 'Florida Panthers':
-                // teamIdTwo = ;
+                teamIdTwo = 13;
                 break;
             case 'Los Angeles Kings':
-                // teamIdTwo = ;
+                teamIdTwo = 26;
                 break;
             case 'Minnesota Wild':
-                // teamIdTwo = ;
+                teamIdTwo = 30;
                 break;
             case 'Montreal Canadiens':
-                // teamIdTwo = ;
+                teamIdTwo = 8;
                 break;
             case 'Nashville Predators':
-                // teamIdTwo = ;
+                teamIdTwo = 18;
                 break;
             case 'New Jersey Devils':
-                // teamIdTwo = ;
+                teamIdTwo = 1;
                 break;
             case 'New York Islanders':
-                // teamIdTwo = ;
+                teamIdTwo = 2;
                 break;
             case 'New York Rangers':
-                // teamIdTwo = ;
+                teamIdTwo = 3;
                 break;
             case 'Ottawa Senators':
-                // teamIdTwo = ;
+                teamIdTwo = 9;
                 break;
             case 'Philadelphia Flyers':
-                // teamIdTwo = ;
+                teamIdTwo = 4;
                 break;
             case 'Pittsburgh Penguins':
-                // teamIdTwo = ;
+                teamIdTwo = 5;
                 break;
             case 'San Jose Sharks':
                 teamIdTwo = 28;
@@ -212,25 +212,25 @@ const Teams = () => {
                 // teamIdTwo = ;
                 break;
             case 'St. Louis Blues':
-                // teamIdTwo = ;
+                teamIdTwo = 19;
                 break;
             case 'Tampa Bay Lightning':
-                // teamIdTwo = ;
+                teamIdTwo = 14;
                 break;
             case 'Toronto Maple Leafs':
-                // teamIdTwo = ;
+                teamIdTwo = 10;
                 break;
             case 'Vancouver Canucks':
-                // teamIdTwo = ;
+                teamIdTwo = 23;
                 break;
             case 'Vegas Golden Knights':
-                // teamIdTwo = ;
+                teamIdTwo = 54;
                 break;
             case 'Washington Capitals':
-                // teamIdTwo = ;
+                teamIdTwo = 15;
                 break;
             case 'Winnipeg Jets':
-                // teamIdTwo = ;
+                teamIdTwo = 52;
                 break;
         }
 
