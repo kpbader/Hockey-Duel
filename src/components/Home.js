@@ -6,49 +6,13 @@ function Home() {
   return (
     <ScrollView style={styles.homeContainer}>
       <Text style={styles.h1}>Welcome to Hockey Duel</Text>
-      <Text style={styles.h2}>The app that quickly provides users with quick team and player statistics comparison</Text>
+      <Text style={styles.h2}>The app that quickly provides users with quick team statistics comparison</Text>
       <Text style={styles.h3}>How It Works</Text>
-      <Text style={styles.p}>This app fetches data from the NHL Stats and Live Data API via RapidAPI. Simply select the appropriate tab from the options below, and then chose your teams or players to compare.</Text>
+      <Text style={styles.p}>This app fetches data from the NHL Stats and Live Data API via RapidAPI. Simply select the Teams tab below, and then chose your teams to compare.</Text>
       <Text style={styles.h3}>What Stats Are Provided</Text>
-      <Text style={styles.h4}>Teams:</Text>
-      <FlatList
-        data={[
-          { key: 'Win/Draw/Loss Record' },
-          { key: 'Goals' },
-          { key: 'Goals Per Game' },
-          { key: 'Save Percentage' },
-          { key: 'Penalties In Minutes' }
-        ]}
-        renderItem={({ item }) => {
-          return (
-            <View>
-              <Text style={styles.bullets}>{`\u2022 ${item.key}`}</Text>
-            </View>
-          );
-        }}
-      />
-      <Text style={{
-        fontSize: 22,
-        fontFamily: 'Copperplate',
-        marginTop: 30,
-        fontWeight: '400'
-      }}>Players:</Text>
-      <FlatList
-        data={[
-          { key: 'Goals' },
-          { key: 'Assists' },
-          { key: 'Save Percentage (Goaltenders)' },
-          { key: 'Wins (Goaltenders' },
-          { key: 'Plus/Minus' }
-        ]}
-        renderItem={({ item }) => {
-          return (
-            <View>
-              <Text style={styles.bullets}>{`\u2022 ${item.key}`}</Text>
-            </View>
-          );
-        }}
-      />
+      <Text style={styles.p}>Team Record</Text>
+      <Text style={styles.p}>Points</Text>
+      <Text style={styles.p}>Goals Against Per Game</Text>
     </ScrollView>
   );
 }

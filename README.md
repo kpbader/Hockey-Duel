@@ -1,7 +1,7 @@
 # Hockey Duel
 
 ## Description
-A mobile app meant to give fans a quick comparison of stats between players of the NHL 
+A mobile app meant to give fans a quick comparison of stats between teams of the NHL 
 
 ## Made with
 * React Native

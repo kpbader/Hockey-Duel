@@ -1,9 +1,6 @@
 import ModalDropdown from 'react-native-modal-dropdown';
 import React, { useEffect, useState } from 'react';
-// import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
-
-
+import { StyleSheet, Text, View } from 'react-native';
 
 
 const Teams = () => {
@@ -16,7 +13,7 @@ const Teams = () => {
 
     useEffect(() => {
 
-        switch (chosenTeamOne ) {
+        switch (chosenTeamOne) {
             case 'Anaheim Ducks':
                 teamIdOne = 24;
                 break;
@@ -115,8 +112,8 @@ const Teams = () => {
                 break;
         }
 
-       
-            const options = {
+
+        const options = {
             method: 'GET',
             headers: {
                 'X-RapidAPI-Key': 'a8143de9d6msh6d1195065a85dbfp18ac06jsn532055b2fc85',
@@ -130,12 +127,12 @@ const Teams = () => {
             .catch(err => console.error(err));
 
 
-    }, [chosenTeamOne])
+    }, [chosenTeamOne]);
 
     useEffect(() => {
-        
 
-        switch (chosenTeamTwo ) {
+
+        switch (chosenTeamTwo) {
             case 'Anaheim Ducks':
                 teamIdTwo = 24;
                 break;
@@ -234,7 +231,7 @@ const Teams = () => {
                 break;
         }
 
-            const options = {
+        const options = {
             method: 'GET',
             headers: {
                 'X-RapidAPI-Key': 'a8143de9d6msh6d1195065a85dbfp18ac06jsn532055b2fc85',
@@ -250,7 +247,8 @@ const Teams = () => {
 
     }, [chosenTeamTwo])
 
-   
+    // console.log(chosenTeamTwo);
+
     return (
         <>
             <ModalDropdown
@@ -297,12 +295,19 @@ const Teams = () => {
 
             </ModalDropdown>
 
+            <View>
+                {teamOneData?.map((team) => (<Text style={styles.h5}>Wins: {team.stat.wins}</Text>))}
+                {teamOneData?.map((team) => (<Text style={styles.h5}>Points: {team.stat.pts}</Text>))}
+                {teamOneData?.map((team) => (<Text style={styles.h5}>Goals Against Per Game: {team.stat.goalsAgainstPerGame}</Text>))}
+            </View>
+
             <ModalDropdown
                 style={{ marginTop: 50 }}
                 textStyle={{ fontSize: 25, fontFamily: 'Copperplate', padding: 20 }}
                 dropdownStyle={{ width: 300 }}
                 dropdownTextStyle={{ fontSize: 20, fontFamily: 'Copperplate' }}
                 onSelect={(idx, value) => setChosenTeamTwo(value)}
+                defaultValue='choose team two'
                 options={[
                     'Anaheim Ducks',
                     'Arizona Coyotes',
@@ -340,16 +345,12 @@ const Teams = () => {
 
             </ModalDropdown>
 
-            {/* <TouchableOpacity>
-            <Text style={styles.button} onPress={getStats}>Compare</Text>
-        </TouchableOpacity> */}
-    <View>
-{teamOneData?.map((team)=> (<Text>{team.stat.faceOffWinPercentage}</Text>))}
-    </View>
-    <View>
-{teamTwoData?.map((team)=> (<Text>{team.stat.faceOffWinPercentage}</Text>))}
-    </View>
-            
+            <View>
+                {teamTwoData?.map((team) => (<Text>Wins: {team.stat.wins}</Text>))}
+                {teamTwoData?.map((team) => (<Text>Points: {team.stat.pts}</Text>))}
+                {teamTwoData?.map((team) => (<Text>Goals Against Per Game: {team.stat.goalsAgainstPerGame}</Text>))}
+            </View>
+        
         </>
 
     )
@@ -367,7 +368,43 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         borderRadius: 7,
         width: '40%',
-    }
+    },
+    h1: {
+        fontSize: 27,
+        fontFamily: 'Copperplate',
+        fontWeight: '400'
+      },
+      h2: {
+        fontSize: 25,
+        fontFamily: 'Copperplate',
+        marginTop: 20,
+        fontWeight: '300'
+      },
+      h3: {
+        fontSize: 24,
+        fontFamily: 'Copperplate',
+        marginTop: 40,
+        fontWeight: '400',
+        textDecorationLine: 'underline'
+      },
+      h4: {
+        fontSize: 22,
+        fontFamily: 'Copperplate',
+        marginTop: 10,
+        fontWeight: '400'
+      },
+      p: {
+        fontSize: 20,
+        fontFamily: 'Copperplate',
+        marginTop: 10,
+        fontWeight: '300'
+      },
+      bullets: {
+        fontSize: 20,
+        fontFamily: 'Copperplate',
+        marginTop: 10,
+        fontWeight: '300'
+      }
 })
 
 export default Teams;
